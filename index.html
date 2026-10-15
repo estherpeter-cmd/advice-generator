@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Advice Generator App</title>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="advice-card" aria-labelledby="advice-heading">
+    <p class="advice-label" id="advice-heading">ADVICE <span id="advice-id">#...</span></p>
+    <blockquote class="advice-text" id="advice-text" aria-live="polite">Loading advice...</blockquote>
+    <picture class="divider">
+      <source media="(max-width: 480px)" srcset="./images/pattern-divider-mobile.svg">
+      <img src="./images/pattern-divider-desktop.svg" alt="">
+    </picture>
+    <button class="dice-button" id="new-advice" type="button" aria-label="Get new advice">
+      <img src="./images/icon-dice.svg" alt="">
+    </button>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>.
+    Coded by <a href="https://scholar.google.com/citations?user=_NKZeS0AAAAJ&hl=en">Peter Esther Oluwafunmilayo</a>.
+  </footer>
+</body>
+</html>
